@@ -1,0 +1,245 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a2e;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background-color: #0f3460;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Align logo on the left and links on the right */
+    align-items: center;  /* Vertically center both elements */
+    max-width: 1450px;    /* Optional: limit the width of the navbar */
+    margin: 0 auto;       /* Center the navbar content */
+    padding: 0 20px;      /* Add some padding on the sides */
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex; /* Align links in a row */
+}
+
+.nav-links li {
+    margin-left: 30px; /* Add space between links */
+}
+
+.nav-links a {
+    color: #e94560;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #fff;
+}
+
+.cta-btn {
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #f65c78;
+}
+
+/* Section Titles: Consistent Style */
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #e94560;  /* Red color for all section titles */
+    text-align: center;
+}
+
+/* Hero Section */
+#hero {
+    background: url('hero-image-test.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-attachment: fixed;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: inline-block;
+    border-right: 3px solid white; /* Blinking cursor effect */
+    animation: blink-cursor 0.8s steps(1) infinite normal;
+}
+
+.hero-content p {
+    font-size: 23px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#hero .cta-btn {
+    padding: 15px 30px;
+}
+
+/* Blinking cursor animation */
+@keyframes blink-cursor {
+    from { border-right-color: white; }
+    to { border-right-color: transparent; }
+}
+
+/* About Section */
+#about {
+    padding: 100px 20px;
+    background-color: #16213e;
+}
+
+#about p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+/* Schedule Section */
+#schedule {
+    background-color: #1a1a2e;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.schedule-item {
+    background-color: #16213e;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.schedule-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.schedule-item h3 {
+    color: #e94560;
+    margin-bottom: 10px;
+}
+
+.schedule-item p {
+    font-size: 18px;
+}
+
+/* Sponsors Section */
+#sponsors {
+    padding: 50px 20px;
+    background-color: #16213e;
+    text-align: center;
+}
+
+.sponsors-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.sponsor-logo img {
+    max-width: 250px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.sponsor-logo img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* FAQ Section */
+#faq {
+    padding: 50px 20px;
+    background-color: #1a1a2e;
+    text-align: left; /* Align text to the left */
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    text-align: left; /* Ensure the content is aligned left */
+}
+
+.faq-item h3 {
+    color: #fff; /* White color for the FAQ questions */
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 5px; /* Add space between question and answer */
+    display: flex; /* Use flexbox to position the arrow next to the text */
+    align-items: center;
+}
+
+.faq-item h3::before {
+    content: "▶"; /* Right-pointing arrow */
+    font-size: 16px;
+    margin-right: 10px; /* Space between the arrow and the question text */
+    transition: transform 0.3s ease; /* Smooth rotation when toggling */
+}
+
+.faq-answer {
+    color: #fff; /* White color for answers */
+    font-style: italic; /* Italicized text for answers */
+    margin-left: 40px; /* Indent the answer to the right */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    font-size: 18px;
+}
+
+.faq-answer.active {
+    max-height: 200px; /* Expand the height for the active answer */
+}
+
+/* Arrow pointing down when answer is shown */
+.faq-item h3.active::before {
+    transform: rotate(90deg); /* Rotate the arrow down */
+}
+
+/* Footer */
+footer {
+    background-color: #0f3460;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #e94560;
+    text-decoration: none;
+}
