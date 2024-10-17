@@ -169,9 +169,14 @@ section h2 {
 }
 
 .sponsors-grid {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
+    gap: 40px; /* Space between sponsor logos */
+    justify-items: center; /* Center logos in each grid cell */
+}
+
+.sponsor-link {
+    text-decoration: none; /* Remove underline from the link */
 }
 
 .sponsor-logo img {
