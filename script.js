@@ -1,28 +1,32 @@
 // Typing effect for hero section
 const heroText = document.querySelector('#hero h1');
-const text = "BASIS Independent Silicon Valley Hackathon 2025";
+const text = "BASIS Independent Silicon Valley<br>Hackathon 2025"; // Keep the line break
+
 let index = 0;
 
 function typeEffect() {
-    if (index < text.length) {
+    if (text.charAt(index) === "<") {
+        // If we encounter an HTML tag, insert the whole tag
+        let htmlTag = "";
+        while (text.charAt(index) !== ">") {
+            htmlTag += text.charAt(index);
+            index++;
+        }
+        htmlTag += text.charAt(index); // Add the closing ">"
+        heroText.innerHTML += htmlTag;
+        index++; // Move past ">"
+    } else {
+        // Append normal characters one by one
         heroText.innerHTML += text.charAt(index);
         index++;
-        setTimeout(typeEffect, 75); // Adjust the speed here
+    }
+
+    if (index < text.length) {
+        setTimeout(typeEffect, 50); // Adjust typing speed here
     }
 }
 
 window.onload = typeEffect;
-
-// Smooth Scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
 
 // JavaScript to toggle FAQ answers and arrow direction
 document.querySelectorAll('.faq-item h3').forEach(item => {

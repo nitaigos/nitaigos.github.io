@@ -13,10 +13,33 @@ body {
     line-height: 1.6;
 }
 
+/* Logo and Text Alignment */
+.logo-container {
+    display: flex;
+    align-items: center; /* Vertically align logo and text */
+}
+
+.logo-img {
+    max-width: 90px; /* Adjust the size of the logo */
+    margin-right: 10px; /* Add some space between logo and text */
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Monsterrat', sans-serif; /* Matches the current style */
+}
+
+/* Headings: Use Montserrat for a striking appearance */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* Navigation */
 header {
     background-color: #0f3460;
-    padding: 20px 0;
+    padding: 2px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -35,6 +58,7 @@ header {
     color: #fff;
     font-size: 24px;
     font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .nav-links {
@@ -50,6 +74,7 @@ header {
     color: #e94560;
     text-decoration: none;
     font-weight: 500;
+    font-family: 'Poppins', sans-serif;
     transition: color 0.3s;
 }
 
@@ -63,19 +88,22 @@ header {
     color: white;
     border-radius: 25px;
     text-decoration: none;
+    font-weight: 700;
     transition: background-color 0.3s;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .cta-btn:hover {
     background-color: #f65c78;
 }
 
-/* Section Titles: Consistent Style */
+/* Section Titles: Consistent Style with Montserrat */
 section h2 {
     font-size: 36px;
     margin-bottom: 20px;
     color: #e94560;  /* Red color for all section titles */
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Hero Section */
@@ -95,25 +123,19 @@ section h2 {
     font-size: 45px;
     font-weight: 700;
     letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
     display: inline-block;
-    border-right: 3px solid white; /* Blinking cursor effect */
-    animation: blink-cursor 0.8s steps(1) infinite normal;
 }
 
 .hero-content p {
     font-size: 23px;
     margin-bottom: 30px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: 'Poppins', sans-serif;
 }
 
 #hero .cta-btn {
     padding: 15px 30px;
-}
-
-/* Blinking cursor animation */
-@keyframes blink-cursor {
-    from { border-right-color: white; }
-    to { border-right-color: transparent; }
 }
 
 /* About Section */
@@ -125,6 +147,7 @@ section h2 {
 #about p {
     font-size: 20px;
     margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Schedule Section */
@@ -155,10 +178,12 @@ section h2 {
 .schedule-item h3 {
     color: #e94560;
     margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .schedule-item p {
     font-size: 18px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Sponsors Section */
@@ -208,6 +233,7 @@ section h2 {
     margin-bottom: 5px; /* Add space between question and answer */
     display: flex; /* Use flexbox to position the arrow next to the text */
     align-items: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .faq-item h3::before {
@@ -225,6 +251,7 @@ section h2 {
     overflow: hidden;
     transition: max-height 0.3s ease;
     font-size: 18px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .faq-answer.active {
@@ -247,4 +274,5 @@ footer {
 footer a {
     color: #e94560;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
