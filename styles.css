@@ -8,7 +8,7 @@
 /* Body Styling */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #1a1a2e;
+    background: linear-gradient(135deg, #1a1a2e, #0f3460); /* Gradient background for the body */
     color: #fff;
     line-height: 1.6;
 }
@@ -28,7 +28,7 @@ body {
     font-size: 24px;
     font-weight: 700;
     color: #fff;
-    font-family: 'Monsterrat', sans-serif; /* Matches the current style */
+    font-family: 'Montserrat', sans-serif; /* Matches the current style */
 }
 
 /* Headings: Use Montserrat for a striking appearance */
@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navigation */
 header {
-    background-color: #0f3460;
+    background: linear-gradient(135deg, #0f3460, #16213e); /* Gradient for the header */
     padding: 2px 0;
     position: sticky;
     top: 0;
@@ -54,13 +54,6 @@ header {
     padding: 0 20px;      /* Add some padding on the sides */
 }
 
-.logo {
-    color: #fff;
-    font-size: 24px;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
-}
-
 .nav-links {
     list-style: none;
     display: flex; /* Align links in a row */
@@ -71,7 +64,7 @@ header {
 }
 
 .nav-links a {
-    color: #e94560;
+    color: #e94560; /* Soft blue */
     text-decoration: none;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
@@ -94,14 +87,14 @@ header {
 }
 
 .cta-btn:hover {
-    background-color: #f65c78;
+    background-color: #e94560; /* Darker purple */
 }
 
 /* Section Titles: Consistent Style with Montserrat */
 section h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #e94560;  /* Red color for all section titles */
+    color: #e94560;  /* Soft blue color for all section titles */
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
@@ -141,7 +134,7 @@ section h2 {
 /* About Section */
 #about {
     padding: 100px 20px;
-    background-color: #16213e;
+    background: linear-gradient(135deg, #290092, #6100a6); /* Purple gradient */
 }
 
 #about p {
@@ -152,7 +145,7 @@ section h2 {
 
 /* Schedule Section */
 #schedule {
-    background-color: #1a1a2e;
+    background: linear-gradient(135deg, #0f3460, #1a1a2e); /* Deep blue and purple */
     padding: 50px 20px;
     text-align: center;
 }
@@ -176,7 +169,7 @@ section h2 {
 }
 
 .schedule-item h3 {
-    color: #e94560;
+    color: #a1c6ea;
     margin-bottom: 10px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -189,7 +182,7 @@ section h2 {
 /* Sponsors Section */
 #sponsors {
     padding: 50px 20px;
-    background-color: #16213e;
+    background-color: #25175b; /* Match sponsors section with purple */
     text-align: center;
 }
 
@@ -205,7 +198,9 @@ section h2 {
 }
 
 .sponsor-logo img {
-    max-width: 250px;
+    width: 200px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    object-fit: contain; /* Ensure the logo fits within the box without distortion */
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -217,7 +212,7 @@ section h2 {
 /* FAQ Section */
 #faq {
     padding: 50px 20px;
-    background-color: #1a1a2e;
+    background: linear-gradient(135deg, #1a1a2e, #16213e); /* Gradient for the FAQ section */
     text-align: left; /* Align text to the left */
 }
 
@@ -265,7 +260,7 @@ section h2 {
 
 /* Footer */
 footer {
-    background-color: #0f3460;
+    background: linear-gradient(135deg, #0f3460, #16213e); /* Blended dark purple and blue */
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -275,4 +270,9 @@ footer a {
     color: #e94560;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+}
+
+/* Additional styling */
+footer p {
+    margin: 10px 0;
 }
