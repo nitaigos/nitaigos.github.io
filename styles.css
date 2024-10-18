@@ -150,6 +150,13 @@ section h2 {
     text-align: center;
 }
 
+.schedule-date {
+    font-size: 23px; /* Slightly smaller than the main title */
+    color: #a1c6ea; /* Light blue to match schedule */
+    margin-bottom: 30px; /* Space between the date and the grid */
+    font-family: 'Poppins', sans-serif;
+}
+
 .schedule-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
