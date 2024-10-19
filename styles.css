@@ -189,7 +189,7 @@ section h2 {
 /* Sponsors Section */
 #sponsors {
     padding: 50px 20px;
-    background-color: #25175b; /* Match sponsors section with purple */
+    background: linear-gradient(135deg, #5c03c2, #8923f7); /* Lighter gradient of purple and blue */
     text-align: center;
 }
 
@@ -205,9 +205,9 @@ section h2 {
 }
 
 .sponsor-logo img {
-    width: 200px; /* Set a fixed width */
-    height: 200px; /* Set a fixed height */
-    object-fit: contain; /* Ensure the logo fits within the box without distortion */
+    width: 150px; /* Ensure all logos have the same width */
+    height: 150px; /* Ensure all logos have the same height */
+    object-fit: contain; /* Maintain logo aspect ratio within the box */
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
