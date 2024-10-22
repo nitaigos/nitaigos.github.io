@@ -189,13 +189,13 @@ section h2 {
 /* Sponsors Section */
 #sponsors {
     padding: 50px 20px;
-    background: linear-gradient(135deg, #5202ad, #8419f6); /* Lighter gradient of purple and blue */
+    background: linear-gradient(135deg, #440291, #851af7); /* Lighter gradient of purple and blue */
     text-align: center;
 }
 
 .sponsors-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
+    grid-template-columns: repeat(2, 1fr); /* Create 2 columns */
     gap: 40px; /* Space between sponsor logos */
     justify-items: center; /* Center logos in each grid cell */
 }
@@ -205,8 +205,8 @@ section h2 {
 }
 
 .sponsor-logo img {
-    width: 150px; /* Ensure all logos have the same width */
-    height: 150px; /* Ensure all logos have the same height */
+    width: 200px; /* Ensure all logos have the same width */
+    height: 200px; /* Ensure all logos have the same height */
     object-fit: contain; /* Maintain logo aspect ratio within the box */
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
