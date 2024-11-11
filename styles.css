@@ -103,6 +103,7 @@ section h2 {
 #hero {
     background: url('images/hero-image-test.jpg') no-repeat center center/cover;
     height: 80vh;
+    min-height: 400px; /* Ensures minimum height for smaller screens */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,6 +111,7 @@ section h2 {
     background-attachment: fixed;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 0 20px; /* Add padding for smaller screens */
 }
 
 .hero-content h1 {
@@ -129,6 +131,38 @@ section h2 {
 
 #hero .cta-btn {
     padding: 15px 30px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #hero {
+        height: 60vh; /* Reduce height on smaller screens */
+        background-position: center center; /* Keep focus on the center */
+        padding: 0 10px; /* Additional padding for smaller screens */
+    }
+
+    .hero-content h1 {
+        font-size: 28px; /* Smaller font size for better fit */
+    }
+
+    .hero-content p {
+        font-size: 18px; /* Adjust paragraph size */
+    }
+}
+
+@media (max-width: 480px) {
+    #hero {
+        height: 50vh; /* Further reduce height for very small screens */
+        background-position: center center;
+    }
+
+    .hero-content h1 {
+        font-size: 24px; /* Smaller font size on extra small screens */
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
 }
 
 /* About Section */
