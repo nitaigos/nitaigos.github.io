@@ -111,11 +111,11 @@ header {
         background: linear-gradient(135deg, #0f3460, #16213e);
         position: absolute;
         top: 60px;
-        right: 0;
-        width: 200px;
+        right: 10px;
+        width: 150px;
         border-radius: 10px;
-        text-align: right;
-        padding: 10px;
+        text-align: middle;
+        padding: 20px;
     }
 
     .nav-links.show {
