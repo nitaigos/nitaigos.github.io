@@ -57,7 +57,7 @@ header {
 .nav-links {
     list-style: none;
     display: flex;
-    flex-wrap: wrap; /* Wrap items on smaller screens */
+    flex-wrap: wrap;
 }
 
 .nav-links li {
@@ -120,6 +120,7 @@ section h2 {
     letter-spacing: 2px;
     font-family: 'Montserrat', sans-serif;
     display: inline-block;
+    margin-bottom: 10px; /* Add some spacing below the heading */
 }
 
 .hero-content p {
@@ -131,6 +132,49 @@ section h2 {
 
 #hero .cta-btn {
     padding: 15px 30px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #hero {
+        height: 60vh;
+        padding: 0 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+        letter-spacing: 1px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .cta-btn {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero {
+        height: 50vh;
+        padding: 0 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 26px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .cta-btn {
+        padding: 8px 16px;
+    }
 }
 
 /* About Section */
@@ -277,55 +321,4 @@ footer a {
 
 footer p {
     margin: 10px 0;
-}
-
-/* Responsive Adjustments for Entire Layout */
-@media (max-width: 1024px) {
-    .logo-text {
-        font-size: 20px;
-    }
-
-    .hero-content h1 {
-        font-size: 36px;
-    }
-
-    .hero-content p {
-        font-size: 20px;
-    }
-
-    #about p {
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 28px;
-    }
-
-    .hero-content p {
-        font-size: 18px;
-    }
-
-    #about {
-        padding: 60px 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-content h1 {
-        font-size: 24px;
-    }
-
-    .hero-content p {
-        font-size: 16px;
-    }
-
-    #about {
-        padding: 50px 10px;
-    }
-
-    .cta-btn {
-        padding: 8px 16px;
-    }
 }
