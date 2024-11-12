@@ -91,121 +91,62 @@ header {
     background-color: #e94560;
 }
 
-/* Responsive Header for Mobile */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo-container {
-        margin-bottom: 10px; /* Adds space between logo and links */
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .nav-links {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
-
-    .cta-btn {
-        padding: 8px 16px; /* Adjusts button size for mobile */
-        font-size: 16px;
-    }
-
-    header {
-        padding: 5px 0;
-    }
-
-    .logo-text {
-        font-size: 20px; /* Adjusts logo text size for mobile */
-    }
+/* Hide nav-links by default on smaller screens */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    transition: max-height 0.3s ease;
 }
 
-@media (max-width: 480px) {
-    .logo-img {
-        max-width: 60px; /* Adjusts logo size for extra small screens */
+/* Hamburger button styling */
+.hamburger {
+    display: none; /* Hide by default */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Responsive Navigation Menu */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide menu on mobile by default */
+        flex-direction: column;
+        background: linear-gradient(135deg, #0f3460, #16213e);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        border-radius: 10px;
+        text-align: right;
+        padding: 10px;
     }
 
-    .logo-text {
-        font-size: 18px; /* Further reduce logo text size */
+    .nav-links.show {
+        display: flex; /* Show menu when toggled */
     }
 
     .nav-links a {
-        font-size: 16px; /* Reduces font size of links */
+        padding: 10px;
+        color: #fff;
+        text-decoration: none;
     }
 
-    .cta-btn {
-        font-size: 14px; /* Reduces button font size */
-    }
-}
-
-/* Section Titles */
-section h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #e94560;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-}
-
-/* Hero Section */
-#hero {
-    background: url('images/hero-image-test.jpg') no-repeat center center/cover;
-    height: 80vh;
-    min-height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    padding: 0 20px;
-}
-
-.hero-content h1 {
-    font-size: 45px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    font-family: 'Montserrat', sans-serif;
-    display: inline-block;
-    margin-bottom: 10px; /* Add some spacing below the heading */
-}
-
-.hero-content p {
-    font-size: 23px;
-    margin-bottom: 30px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    font-family: 'Poppins', sans-serif;
-}
-
-#hero .cta-btn {
-    padding: 15px 30px;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    #hero {
-        height: 60vh;
-        padding: 0 10px;
+    .hamburger {
+        display: flex; /* Show hamburger on mobile */
     }
 
-    .hero-content h1 {
-        font-size: 32px;
-        letter-spacing: 1px;
-    }
-
-    .hero-content p {
-        font-size: 18px;
-        margin-bottom: 20px;
-    }
-
-    .cta-btn {
-        padding: 10px 20px;
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 

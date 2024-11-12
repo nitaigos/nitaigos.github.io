@@ -45,3 +45,9 @@ document.querySelectorAll('.faq-item h3').forEach(item => {
         }
     });
 });
+
+// Mobile hamburger button
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+}
