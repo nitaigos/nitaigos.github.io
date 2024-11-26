@@ -258,19 +258,43 @@ section h2 {
 }
 
 .sponsors-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 200px; /* Adjust spacing between sponsors */
+    flex-wrap: wrap; /* Ensures it wraps for smaller screens */
 }
+
+.sponsor-logo img {
+    width: 150px; /* Adjust to fit logos properly */
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.sponsor-logo img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
 
 .sponsor-link {
     text-decoration: none;
 }
 
+@media (max-width: 768px) {
+    .sponsors-grid {
+        flex-direction: column;
+        gap: 20px; /* Adjust spacing for smaller screens */
+    }
+
+    .sponsor-logo img {
+        width: 120px; /* Smaller logo size for mobile */
+    }
+}
+
 .sponsor-logo img {
-    width: 200px;
-    height: 200px;
+    width: 225px;
+    height: 225px;
     object-fit: contain;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
