@@ -13,6 +13,11 @@ body {
     line-height: 1.6;
 }
 
+/* Fix for header overlap */
+section {
+    scroll-margin-top: 70px; /* Adjust based on header height */
+}
+
 /* Logo and Text Alignment */
 .logo-container {
     display: flex;
@@ -96,11 +101,18 @@ header {
     background-color: #e94560;
 }
 
+/* Register Logo Styling */
 .register-logo {
     max-width: 40px; /* Adjust the size of the logo */
     height: auto; /* Maintain aspect ratio */
     display: inline-block;
     vertical-align: middle;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition for hover effects */
+}
+
+.register-logo:hover {
+    transform: scale(1.1); /* Slightly enlarge the logo */
+    opacity: 0.8; /* Reduce opacity */
 }
 
 /* Hamburger Menu */
