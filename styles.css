@@ -362,10 +362,11 @@ section h2 {
 
 .contact-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around; /* Ensures equal spacing between items */
     align-items: center;
-    gap: 150px; /* Space between icons */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    gap: 50px; /* Adjusts spacing between rows on smaller screens */
+    padding: 0px 150px
 }
 
 .contact-item {
@@ -375,6 +376,7 @@ section h2 {
     text-decoration: none;
     color: #fff;
     transition: transform 0.3s ease, opacity 0.3s ease;
+    width: 120px; /* Ensures consistent width for all contact items */
 }
 
 .contact-item:hover {
@@ -386,6 +388,14 @@ section h2 {
     width: 80px;
     height: 80px;
     margin-bottom: 10px;
+}
+
+/* Specific fix for Discord icon */
+.contact-icon.discord {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 12px;
 }
 
 /* Footer */
