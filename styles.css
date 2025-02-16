@@ -127,20 +127,20 @@ header {
     font-family: 'Montserrat', sans-serif;
     display: inline-block;
     text-align: center;
-    margin-top: 10px; /* Spacing below Register button */
+    margin-top: 10px;
 }
 
 /* Hover Effect */
 .devpost-btn:hover {
-    background-color: #005FCC; /* Darker blue */
-    transform: scale(1.05); /* Slightly enlarges on hover */
+    background-color: #005FCC;
+    transform: scale(1.05);
 }
 
 /* Stacking buttons */
 .hero-content a {
-    display: block; /* Make buttons appear in separate lines */
+    display: block;
     width: fit-content;
-    margin: 10px auto; /* Centers the buttons */
+    margin: 10px auto;
 }
 
 /* Hamburger Menu */
