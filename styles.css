@@ -115,6 +115,34 @@ header {
     opacity: 0.8; /* Reduce opacity */
 }
 
+/* DevPost Button Styling */
+.devpost-btn {
+    background-color: #0085FF; /* DevPost Blue */
+    padding: 15px 30px;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px; /* Spacing below Register button */
+}
+
+/* Hover Effect */
+.devpost-btn:hover {
+    background-color: #005FCC; /* Darker blue */
+    transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+/* Stacking buttons */
+.hero-content a {
+    display: block; /* Make buttons appear in separate lines */
+    width: fit-content;
+    margin: 10px auto; /* Centers the buttons */
+}
+
 /* Hamburger Menu */
 .hamburger {
     display: none;
