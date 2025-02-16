@@ -15,7 +15,7 @@ body {
 
 /* Fix for header overlap */
 section {
-    scroll-margin-top: 70px; /* Adjust based on header height */
+    scroll-margin-top: 70px;
 }
 
 /* Logo and Text Alignment */
@@ -406,19 +406,6 @@ section h2 {
     line-height: 1.6;
 }
 
-/* Responsive Design for Smaller Screens */
-@media (max-width: 768px) {
-    .judge {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .judge-photo {
-        margin-bottom: 10px;
-    }
-}
-
 /* Team Section */
 #team {
     padding: 50px 20px;
@@ -435,18 +422,17 @@ section h2 {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Updated Grid Layout: Wider Boxes, Smaller Gaps */
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Keeps 3 columns */
-    gap: 25px; /* Reduced gap between boxes */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     justify-content: center;
     align-items: stretch;
-    max-width: 1350px; /* Slightly increased max width */
+    max-width: 1400px; /* Ensures it stays centered */
+    width: 100%;
     margin: 0 auto;
 }
 
-/* Team Member Box */
 .team-member {
     background-color: #16213e;
     padding: 30px;
@@ -458,7 +444,7 @@ section h2 {
     flex-direction: column;
     justify-content: space-between;
     min-height: 450px;
-    max-width: 450px; /* Increased box width */
+    max-width: 450px;
 }
 
 .team-member:hover {
@@ -499,20 +485,6 @@ section h2 {
     color: #a1c6ea;
     line-height: 1.6;
     flex-grow: 1;
-}
-
-/* Responsive Design for Smaller Screens */
-@media (max-width: 992px) {
-    .team-grid {
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 1000px;
-    }
-}
-
-@media (max-width: 768px) {
-    .team-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 /* FAQ Section */
@@ -633,55 +605,4 @@ footer a {
 
 footer p {
     margin: 10px 0;
-}
-
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-    .nav-links {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        flex-direction: column;
-        background: linear-gradient(135deg, #0f3460, #16213e);
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-    }
-
-    .nav-links.show {
-        max-height: 500px;
-    }
-
-    .nav-links a {
-        padding: 15px;
-        text-align: center;
-        border-bottom: 3px solid #000000;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-
-    #about, #schedule, #sponsors, #faq, #contact {
-        padding: 30px 10px;
-    }
-
-    .about-container, .schedule-grid {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-image img {
-        max-width: 90%;
-    }
-
-    .sponsors-grid {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .faq-item h3 {
-        font-size: 18px;
-    }
 }
