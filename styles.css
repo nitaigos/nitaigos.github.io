@@ -296,6 +296,102 @@ section h2 {
     opacity: 0.8;
 }
 
+/* Team Section */
+#team {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #1a1a2e, #290092);
+    color: #fff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#team h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #e94560;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Updated Grid Layout: Wider Boxes, Smaller Gaps */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Keeps 3 columns */
+    gap: 25px; /* Reduced gap between boxes */
+    justify-content: center;
+    align-items: stretch;
+    max-width: 1350px; /* Slightly increased max width */
+    margin: 0 auto;
+}
+
+/* Team Member Box */
+.team-member {
+    background-color: #16213e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 450px;
+    max-width: 450px; /* Increased box width */
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Team Member Image */
+.team-photo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 15px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Name Styling */
+.team-member h3 {
+    font-size: 22px; /* Slightly bigger */
+    color: #e94560;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Position Styling */
+.team-member .team-position {
+    font-size: 17px;
+    font-style: italic;
+    color: #a1c6ea;
+    margin-bottom: 15px;
+}
+
+/* Bio Styling */
+.team-member p {
+    font-size: 16px;
+    color: #a1c6ea;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 992px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* FAQ Section */
 #faq {
     padding: 50px 20px;
