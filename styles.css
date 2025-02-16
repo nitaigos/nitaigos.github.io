@@ -127,20 +127,20 @@ header {
     font-family: 'Montserrat', sans-serif;
     display: inline-block;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 10px; /* Spacing below Register button */
 }
 
 /* Hover Effect */
 .devpost-btn:hover {
-    background-color: #005FCC;
-    transform: scale(1.05);
+    background-color: #005FCC; /* Darker blue */
+    transform: scale(1.05); /* Slightly enlarges on hover */
 }
 
 /* Stacking buttons */
 .hero-content a {
-    display: block;
+    display: block; /* Make buttons appear in separate lines */
     width: fit-content;
-    margin: 10px auto;
+    margin: 10px auto; /* Centers the buttons */
 }
 
 /* Hamburger Menu */
@@ -322,6 +322,101 @@ section h2 {
 .sponsor-logo img:hover {
     transform: scale(1.1);
     opacity: 0.8;
+}
+
+/* Judges Section */
+#judges {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #1a1a2e, #290092);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+#judges h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #e94560;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Grid Layout for Judges (Horizontal) */
+.judges-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Space between judges */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Judge Box (Row Format) */
+.judge {
+    display: flex;
+    align-items: center;
+    background-color: #16213e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.judge:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Judge Photo */
+.judge-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Judge Info (Name, Position, Bio) */
+.judge-info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Judge Name */
+.judge h3 {
+    font-size: 22px;
+    color: #e94560;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Judge Position */
+.judge-position {
+    font-size: 17px;
+    font-style: italic;
+    color: #a1c6ea;
+    margin-bottom: 8px;
+}
+
+/* Judge Bio */
+.judge-bio {
+    font-size: 16px;
+    color: #a1c6ea;
+    line-height: 1.6;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .judge {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .judge-photo {
+        margin-bottom: 10px;
+    }
 }
 
 /* Team Section */
