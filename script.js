@@ -1,12 +1,12 @@
 // Typing effect for hero section
 const heroText = document.querySelector('#hero h1');
-const text = "BASIS Independent Silicon Valley<br>Hackathon 2025"; // Keep the line break
+const text = "BASIS Independent Silicon Valley<br>Hackathon 2026"; // Keep the line break
 
 let index = 0;
 
 function typeEffect() {
     if (text.charAt(index) === "<") {
-        // If we encounter an HTML tag, insert the whole tag
+        // If encounter an HTML tag, insert the whole tag
         let htmlTag = "";
         while (text.charAt(index) !== ">") {
             htmlTag += text.charAt(index);
