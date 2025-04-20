@@ -49,8 +49,22 @@ document.querySelectorAll('.faq-item h3').forEach(item => {
 // Mobile hamburger button
 function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('show');
+    const hamburger = document.querySelector('.hamburger');
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('active');
 }
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    const navLinks = document.querySelector('.nav-links');
+    const hamburger = document.querySelector('.hamburger');
+    if (navLinks.classList.contains('active') && 
+        !e.target.closest('.nav-links') && 
+        !e.target.closest('.hamburger')) {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('active');
+    }
+});
 
 // Gallery Modal Functions
 function openModal(element) {
