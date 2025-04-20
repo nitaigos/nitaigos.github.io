@@ -51,3 +51,25 @@ function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('show');
 }
+
+// Gallery Modal Functions
+function openModal(element) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    const modalCaption = document.getElementById("modalCaption");
+    
+    modal.style.display = "block";
+    modalImg.src = element.querySelector('img').src;
+    modalCaption.innerHTML = element.querySelector('.gallery-caption').innerHTML;
+}
+
+function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+}
+
+// Close modal when pressing escape key
+document.addEventListener('keydown', function(event) {
+    if (event.key === "Escape") {
+        closeModal();
+    }
+});
