@@ -530,6 +530,11 @@ header {
 /* About Section */
 #about {
     padding: 6rem 0;
+    background: white;
+}
+
+/* 2025.html about section - match judges background */
+.page-2025 #about {
     background: var(--bg-secondary);
 }
 
@@ -762,7 +767,7 @@ header {
 /* Judges Section */
 #judges {
     padding: 6rem 0;
-    background: white;
+    background: var(--bg-secondary);
 }
 
 .judges-grid {
@@ -827,7 +832,7 @@ header {
 /* Winners Section */
 #winners {
     padding: 6rem 0;
-    background: var(--bg-secondary);
+    background: white;
 }
 
 .winners-grid {
@@ -881,7 +886,7 @@ header {
 /* Gallery Section */
 #gallery {
     padding: 6rem 0;
-    background: white;
+    background: var(--bg-secondary);
 }
 
 .gallery-grid {
