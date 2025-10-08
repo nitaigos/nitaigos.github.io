@@ -4,39 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>BISV Hackathon 2026</title>
+    <title>BISV Hacks 2026</title>
     <link rel="icon" type="image/png" href="images/BISV Hacks Favicon.png">
     <link rel="shortcut icon" type="image/png" href="images/BISV Hacks Favicon.png">
     <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts: Poppins for body text, Montserrat for headings -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Inter for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>    
 <body>
 
     <!-- Navigation -->
     <header>
         <nav class="navbar">
-            <div class="logo-container">
-                <img src="images/bisv hacks logo.png" alt="B-H Logo" class="logo-img">
+            <a href="#hero" class="logo-container">
+                <img src="images/bisv hacks logo.png" alt="BISV Hacks Logo" class="logo-img">
                 <span class="logo-text">BISV Hacks</span>
-            </div>
+            </a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
                 <li><a href="#sponsors">Sponsors</a></li>
                 <li><a href="#team">Team</a></li>
-                <li><a href="#faq">FAQs</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropbtn">Previous Hackathons</a>
+                    <a href="#" class="dropbtn">Previous Events</a>
                     <div class="dropdown-content">
                         <a href="2025.html">BISV Hacks 2025</a>
                     </div>
                 </li>
                 <li class="register-link">
-                    <a href="https://forms.gle/hJ1Zq3e4emv31vJY6" target="_blank" class="cta-btn">Register</a>
-                    <a href="https://hackclub.com" target="_blank">
-                        <img src="images/icon-rounded.png" alt="Hack Club Logo" class="register-logo">
-                    </a>
+                    <a href="https://forms.gle/hJ1Zq3e4emv31vJY6" target="_blank" class="cta-btn">Register Now</a>
                 </li>
             </ul>
 
@@ -51,58 +48,136 @@
 
     <!-- Hero Section -->
     <section id="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
         <div class="hero-content">
-            <h1></h1>
-            <p>Building a better world, one hack at a time.</p>
-            <a href="https://forms.gle/hJ1Zq3e4emv31vJY6" target="_blank" class="cta-btn">Register</a>
-            <!-- <a href="https://bisv-hacks.devpost.com/" target="_blank" class="cta-btn devpost-btn">DevPost Submission</a> -->
+            <div class="hero-badge">
+                <span>March 2026</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-title-main">BISV Hacks</span>
+                <span class="hero-title-accent">2026</span>
+            </h1>
+            <p class="hero-motto">Building a better world, one hack at a time.</p>
+            <div class="hero-actions">
+                <a href="https://forms.gle/hJ1Zq3e4emv31vJY6" target="_blank" class="cta-btn primary">Register Now</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">200+</span>
+                    <span class="stat-label">Participants</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">Hours</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">$3,000</span>
+                    <span class="stat-label">Prizes</span>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
-        <h2 class="about-header">About BISV Hacks</h2>
-        <div class="about-container">
-            <div class="about-text">
-                <p>
-                    <strong>BISV Hacks</strong> is an inclusive, student-led hackathon organized by the Programming for 
-                    Data Science & Machine Learning Club at BASIS Independent Silicon Valley. The hackathon 
-                        will run throughout the day, hosting over many participants from many different 
-                        areas.
-                </p>
-                <p>
-                    Our event is designed to encourage creativity and collaboration by bringing together students of all experience 
-                    levels. Participants will either form teams or work solo to develop innovative projects, solve real-world 
-                    challenges, and gain valuable experience to fix these issues. In addition to coding, attendees will have the 
-                    opportunity to hear and gain advice from inspiring speakers, who are industry professionals, and engage in hands-on 
-                    workshops.
-                </p>
-                <p>
-                    A highlight of BISV Hacks is our focus on inclusivity and accessibility. Whether you're a seasoned programmer or 
-                    completely new to coding, we welcome you to join us. We also provide lunch, snacks, and refreshments to fuel your 
-                    creativity throughout the day.
-                </p>
-            </div>
-            <div class="about-image">
-                <img src="images/BISV Hacks about-image.png" alt="BISV Hacks Venue">
+        <div class="container">
+            <h2 class="section-title">About BISV Hacks</h2>
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>What is BISV Hacks?</h3>
+                        <p>
+                            <strong>BISV Hacks</strong> is an inclusive, student-led hackathon organized by the Programming for 
+                            Data Science & Machine Learning Club at BASIS Independent Silicon Valley in San Jose, CA. The hackathon 
+                            will run throughout the day, hosting participants from many different areas.
+                        </p>
+                        
+                        <h3>Our Mission</h3>
+                        <p>
+                            Our event is designed to encourage creativity and collaboration by bringing together students of all experience 
+                            levels. Participants will either form teams or work solo to develop innovative projects, solve real-world 
+                            challenges, and gain valuable experience.
+                        </p>
+                        
+                        <h3>What to Expect</h3>
+                        <p>
+                            In addition to coding, attendees will have the opportunity to hear from inspiring speakers who are industry 
+                            professionals, and engage in hands-on workshops. We also provide lunch, snacks, and refreshments to fuel your 
+                            creativity throughout the day.
+                        </p>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/BISV Hacks about-image.png" alt="BISV Hacks 2025 Event">
+                    <div class="image-caption">
+                        <span class="caption-text">BISV Hacks 2025</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <h2 class="section-title">Why Join BISV Hacks?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Amazing Prizes</h3>
+                    <p>From tech gadgets like Airpods to cash prizes and free subscriptions totaling $3,000+, BISV Hacks rewards creativity and innovation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🍕</div>
+                    <h3>Catered Meals</h3>
+                    <p>Leave your hunger at the door — we've got all you need catered for the entire event, plus plenty of snacks and drinks to keep you fueled.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>All Skill Levels</h3>
+                    <p>No coding experience? No problem. Our workshops and hands-on guidance make BISV Hacks perfect for beginners as well as experienced developers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Sponsors Section -->
     <section id="sponsors">
-        <h2>Sponsors</h2>
+        <div class="container">
+            <h2 class="section-title">Our Sponsors</h2>
+            <p class="section-subtitle">Thank you to our amazing sponsors who make BISV Hacks possible!</p>
             <div class="sponsors-grid">
-                <a href="https://basisindependent.com/schools/ca/silicon-valley/" target="_blank" class="sponsor-link"><div class="sponsor-logo"><img src="images/bisv logo.webp" alt="Sponsor 1"></div></a>
-                <a href="https://hackclub.com" target="_blank" class="sponsor-link"><div class="sponsor-logo"><img src="images/flag-orpheus-top.png" alt="Sponsor 3"></div></a>
-                <a href="https://stellarlearning.app" target="_blank" class="sponsor-link"><div class="sponsor-logo"><img src="images/stellar logo.png" alt="Sponsor 2"></div></a>
+                <a href="https://basisindependent.com/schools/ca/silicon-valley/" target="_blank" class="sponsor-link">
+                    <div class="sponsor-logo">
+                        <img src="images/bisv logo.webp" alt="BASIS Independent Silicon Valley">
+                    </div>
+                </a>
+                <a href="https://hackclub.com" target="_blank" class="sponsor-link">
+                    <div class="sponsor-logo">
+                        <img src="images/flag-orpheus-top.png" alt="Hack Club">
+                    </div>
+                </a>
+                <a href="https://stellarlearning.app" target="_blank" class="sponsor-link">
+                    <div class="sponsor-logo">
+                        <img src="images/stellar logo.png" alt="Stellar Learning">
+                    </div>
+                </a>
             </div>
+            <div class="sponsor-cta">
+                <p>Interested in sponsoring BISV Hacks 2026?</p>
+                <a href="mailto:bisvhackathon@gmail.com" class="cta-btn secondary">Contact Us</a>
+            </div>
+        </div>
     </section>
 
     <!-- Team Section -->
     <section id="team">
-        <h2>The Team</h2>
-        <div class="team-grid">
+        <div class="container">
+            <h2 class="section-title">Meet the Team</h2>
+            <div class="team-grid">
             <!-- Team Member 1 -->
             <div class="team-member">
                 <img src="images/charan hackathon image.jpeg" alt="Team Member 1" class="team-photo">
@@ -169,10 +244,11 @@
         </div>
     </section>
 
-    
     <!-- FAQ Section -->
     <section id="faq">
-        <h2>FAQs</h2>
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
         <div class="faq-item">
             <h3>What is a hackathon?</h3>
             <p class="faq-answer">A hackathon is an event in which a large number of people meet to engage in collaborative or competitive computer programming. In our case, competitive programming.</p>
@@ -205,24 +281,38 @@
             <h3>Is there going to be food?</h3>
             <p class="faq-answer">Yes, lunch will be held, and there will be snacks served throughout the day.</p>
         </div>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Us Section -->
     <section id="contact">
-        <h2 class="contact-header">Contact Us</h2>
-        <div class="contact-container">
-            <a href="mailto:bisvhackathon@gmail.com" class="contact-item">
-                <img src="images/mail icon.png" alt="Email" class="contact-icon">
-                <span>Email us</span>
-            </a>
-            <a href="https://www.instagram.com/bisv.hacks/" target="_blank" class="contact-item">
-                <img src="images/instagram icon.png" alt="Instagram" class="contact-icon">
-                <span>Follow us on Instagram</span>
-            </a>
-            <a href="https://discord.gg/R6FVyQdJFj" target="_blank" class="contact-item">
-                <img src="images/discord icon.png" alt="Discord" class="contact-icon discord">
-                <span>Join our Discord server</span>
-            </a>
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">Have questions? We'd love to hear from you!</p>
+            <div class="contact-container">
+                <a href="mailto:bisvhackathon@gmail.com" class="contact-item">
+                    <div class="contact-icon">
+                        <img src="images/mail icon.png" alt="Email">
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>bisvhackathon@gmail.com</p>
+                </a>
+                <a href="https://www.instagram.com/bisv.hacks/" target="_blank" class="contact-item">
+                    <div class="contact-icon">
+                        <img src="images/instagram icon.png" alt="Instagram">
+                    </div>
+                    <h3>Follow Us</h3>
+                    <p>@bisv.hacks</p>
+                </a>
+                <a href="https://discord.gg/R6FVyQdJFj" target="_blank" class="contact-item">
+                    <div class="contact-icon">
+                        <img src="images/discord icon.png" alt="Discord">
+                    </div>
+                    <h3>Join Discord</h3>
+                    <p>Connect with other hackers</p>
+                </a>
+            </div>
         </div>
     </section>    
 
