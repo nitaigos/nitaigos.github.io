@@ -12,6 +12,16 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@300;400;600;700;800&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
+    <meta content="BISV Hacks - Let's build a better world, one hack at a time." property="og:title" />
+    <meta
+            content="BISV Hacks is an inclusive, student-led hackathon organized by the Programming for Data Science & Machine Learning Club at BASIS Independent Silicon Valley in San Jose, CA. The hackathon will last 12 hours on March 8th, 2026, hosting participants from many different areas.
+"
+            property="og:description"
+    />
+    <meta content="https://bisvhacks.com/" property="og:url" />
+    <meta content="/images/bisv hacks logo.png" property="og:image" />
+    <meta content="#1d4ed8" data-react-helmet="true" name="theme-color" />
+
     <script>
         function toggleMenu() {
             const panel = document.getElementById('mobilePanel');
@@ -78,9 +88,9 @@
 <!-- Header / Nav -->
 <header class="shadow-red-500/50  max-w-4xl top-6 left-1/2 -translate-x-1/2 w-full rounded-2xl fixed inset-x-0 top-0 z-50 backdrop-blur-lg bg-black/50 border-b border-slate-800 shadow-sm">
     <div class="container mx-auto px-6 py-3">
-        <nav class="flex items-center justify-between h-16">
+        <nav class="flex items-center justify-between h-14">
             <a href="#hero" class="orbitron flex items-center gap-3">
-                <img src="images/bisv hacks logo.png" alt="BISV Hacks Logo" class="w-16 h-16 object-contain p-1">
+                <img src="images/bisv hacks logo.png" alt="BISV Hacks Logo" class="w-16 h-14 object-contain p-1">
                 <span class="font-extrabold text-lg text-red-400">BISV Hacks</span>
             </a>
 
@@ -185,9 +195,8 @@
 <!-- HERO -->
 <section id="hero" class="relative min-h-screen flex items-center justify-center pt-16">
     <!-- background image -->
-    <div class="absolute inset-0">
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('images/hero-image-test.jpg'); filter: saturate(0.95) blur(0px);"></div>
-    </div>
+     <div class="absolute inset-0 bg-cover bg-center" style="background-image:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('images/hero-image-test.jpg'); filter: saturate(0.95) blur(0px);"></div>
+
 
     <div class="relative z-10 max-w-4xl text-center px-6 py-20">
         <div class="orbitron inline-block bg-white/20 backdrop-blur-md px-4 py-2 rounded-full border border-white/30 mb-6 text-sm font-semibold text-white">
@@ -196,7 +205,7 @@
 
         <h1 class="orbitron text-5xl sm:text-5xl md:text-6xl font-extrabold leading-tight text-white">
             <span class="text-7xl font-extrabold">BISV Hacks </span>
-            <span class="block mt-2 text-red-500 text-3xl sm:text-4xl">2026</span>
+            <span class="block mt-2 text-red-500 text-4xl sm:text-5xl">2026</span>
         </h1>
 
         <p class="mt-6 text-lg font-bold sm:text-xl italic text-slate-400 drop-shadow-md">Let's build a better world, one hack at a time.</p>
@@ -224,15 +233,15 @@
 
         <div class="orbitron mt-10 flex justify-center gap-8 text-center flex-wrap">
             <div>
-                <div class="text-2xl font-extrabold text-red-400">12</div>
+                <div class="text-3xl font-extrabold text-red-400">12</div>
                 <div class="text-sm text-slate-200">Hours</div>
             </div>
             <div>
-                <div class="text-2xl font-extrabold text-red-400">100+</div>
+                <div class="text-3xl font-extrabold text-red-400">100+</div>
                 <div class="text-sm text-slate-200">Hackers</div>
             </div>
             <div>
-                <div class="text-2xl font-extrabold text-red-400">$15,000+</div>
+                <div class="text-3xl font-extrabold text-red-400">$15,000+</div>
                 <div class="text-sm text-slate-200">In Prizes</div>
             </div>
         </div>
@@ -242,16 +251,15 @@
 <!-- ABOUT -->
 <section id="about" class="py-20 bg-slate-950">
     <div class="container mx-auto px-6">
-        <p class="orbitron text-3xl md:text-4xl font-extrabold text-center mb-4">
+        <p class="orbitron text-3xl md:text-4xl font-extrabold text-center mb-16">
             <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-600 via-red-400 to-orange-500">About BISV Hacks</span>
         </p>
-        <div class="max-w-3xl mx-auto text-center text-slate-300 mb-8">An inclusive, student-led hackathon at BASIS Independent Silicon Valley — creativity, collaboration, workshops, and projects.</div>
 
         <div class="grid md:grid-cols-2 gap-10 items-start">
             <div class="space-y-6">
                 <div>
                     <h3 class="orbitron text-xl font-semibold text-red-500 mb-2">What is BISV Hacks?</h3>
-                    <p class="text-slate-400"> <strong class="orbitron">BISV Hacks</strong> is an inclusive, student-led hackathon organized by the Programming for Data Science & Machine Learning Club at BASIS Independent Silicon Valley in San Jose, CA. The hackathon will last 12 hours, hosting participants from many different areas.</p>
+                    <p class="text-slate-400"> <strong class="orbitron">BISV Hacks</strong> is an inclusive, student-led hackathon organized by the Programming for Data Science & Machine Learning Club at BASIS Independent Silicon Valley in San Jose, CA. The hackathon will last 12 hours on March 8th, 2026, hosting participants from many different areas.</p>
                 </div>
 
                 <div>
@@ -265,7 +273,7 @@
                 </div>
             </div>
 
-            <div class="rounded-2xl overflow-hidden shadow-lg">
+            <div class="bg-slate-900 rounded-2xl overflow-hidden shadow-lg">
                 <img src="images/BISV Hacks about-image.png" alt="BISV Hacks Event" class="w-full h-72 object-cover">
                 <div class="p-4 text-white">
                     <div class="orbitron text-sm font-medium">1st Iteration, BISV Hacks 2025</div>
@@ -276,27 +284,26 @@
 </section>
 
 <!-- FEATURES -->
-<section id="features" class="py-20 bg-slate-900">
+<section id="features" class="py-20 bg-slate-950">
     <div class="container mx-auto px-6">
-        <p class="orbitron text-3xl md:text-4xl font-extrabold text-center mb-4">
+        <p class="orbitron text-3xl md:text-4xl font-extrabold text-center mb-12">
             <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-600 via-red-400 to-orange-500">Why Join BISV Hacks?</span>
         </p>
-        <p class="text-center text-slate-400 max-w-2xl mx-auto mb-8">Prizes, catered meals, workshops — and a welcoming environment for beginners and experienced hackers alike.</p>
 
         <div class="grid gap-6 md:grid-cols-3">
-            <div class="bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-700 text-center hover:shadow-xl transition-transform transform hover:-translate-y-2">
+            <div class="bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-700 text-center hover:shadow-xl transition-transform transform hover:-translate-y-2">
                 <div class="text-4xl mb-3">🏆</div>
                 <h3 class="orbitron font-semibold text-lg mb-2 text-white">Amazing Prizes</h3>
-                <p class="text-slate-300">Tech gadgets, cash prizes and subscriptions totaling $3,000+ — we reward creativity and innovation.</p>
+                <p class="text-slate-300">Tech gadgets, cash prizes and subscriptions totaling $15,000+ — we reward creativity and innovation.</p>
             </div>
 
-            <div class="bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-700 text-center hover:shadow-xl transition-transform transform hover:-translate-y-2">
+            <div class="bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-700 text-center hover:shadow-xl transition-transform transform hover:-translate-y-2">
                 <div class="text-4xl mb-3">🍕</div>
                 <h3 class="orbitron font-semibold text-lg mb-2 text-white">Catered Meals</h3>
                 <p class="text-slate-300">Lunch and snacks will be available throughout the day so you can focus on building.</p>
             </div>
 
-            <div class="bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-700 text-center hover:shadow-xl transition-transform transform hover:-translate-y-2">
+            <div class="bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-700 text-center hover:shadow-xl transition-transform transform hover:-translate-y-2">
                 <div class="text-4xl mb-3">👥</div>
                 <h3 class="orbitron font-semibold text-lg mb-2 text-white">All Skill Levels</h3>
                 <p class="text-slate-300">No coding experience necessary — workshops and mentors will help you get started.</p>
@@ -321,9 +328,9 @@
         <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
             <!-- First -->
-            <div class="bg-slate-800 p-6 rounded-2xl border border-red-500/40 shadow-sm hover:shadow-xl transition transform hover:-translate-y-2">
+            <div class="bg-slate-900 p-6 rounded-2xl border border-red-500/40 shadow-sm hover:shadow-xl transition transform hover:-translate-y-2">
                 <div class="orbitron text-red-400 text-sm tracking-widest mb-2">FIRST PLACE</div>
-                <h3 class="text-xl font-semibold text-white mb-3">1 Winner</h3>
+                <h3 class="text-xl font-semibold text-white mb-3">1 Winning Team</h3>
                 <ul class="space-y-1 text-slate-300 text-sm">
                     <li>$150 Cash</li>
                     <li>+ More TBD</li>
@@ -331,9 +338,9 @@
             </div>
 
             <!-- Second -->
-            <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 shadow-sm hover:shadow-xl transition transform hover:-translate-y-2">
+            <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 shadow-sm hover:shadow-xl transition transform hover:-translate-y-2">
                 <div class="orbitron text-red-400 text-sm tracking-widest mb-2">SECOND PLACE</div>
-                <h3 class="text-xl font-semibold text-white mb-3">1 Winner</h3>
+                <h3 class="text-xl font-semibold text-white mb-3">1 Winning Team</h3>
                 <ul class="space-y-1 text-slate-300 text-sm">
                     <li>$100 Cash</li>
                     <li>+ More TBD</li>
@@ -341,9 +348,9 @@
             </div>
 
             <!-- Third -->
-            <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 shadow-sm hover:shadow-xl transition transform hover:-translate-y-2">
+            <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 shadow-sm hover:shadow-xl transition transform hover:-translate-y-2">
                 <div class="orbitron text-red-400 text-sm tracking-widest mb-2">THIRD PLACE</div>
-                <h3 class="text-xl font-semibold text-white mb-3">1 Winner</h3>
+                <h3 class="text-xl font-semibold text-white mb-3">1 Winning Team</h3>
                 <ul class="space-y-1 text-slate-300 text-sm">
                     <li>$75 Cash</li>
                     <li>+ More TBD</li>
@@ -351,9 +358,9 @@
             </div>
 
             <!-- Fourth -->
-            <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 shadow-sm hover:shadow-xl transition transform hover:-translate-y-2">
+            <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 shadow-sm hover:shadow-xl transition transform hover:-translate-y-2">
                 <div class="orbitron text-red-400 text-sm tracking-widest mb-2">FOURTH PLACE</div>
-                <h3 class="text-xl font-semibold text-white mb-3">1 Winner</h3>
+                <h3 class="text-xl font-semibold text-white mb-3">1 Winning Team</h3>
                 <ul class="space-y-1 text-slate-300 text-sm">
                     <li>$75 Cash</li>
                     <li>+ More TBD</li>
@@ -361,9 +368,9 @@
             </div>
 
             <!-- Fifth -->
-            <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 shadow-sm hover:shadow-xl transition transform hover:-translate-y-2">
+            <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 shadow-sm hover:shadow-xl transition transform hover:-translate-y-2">
                 <div class="orbitron text-red-400 text-sm tracking-widest mb-2">FIFTH PLACE</div>
-                <h3 class="text-xl font-semibold text-white mb-3">1 Winner</h3>
+                <h3 class="text-xl font-semibold text-white mb-3">1 Winning Team</h3>
                 <ul class="space-y-1 text-slate-300 text-sm">
                     <li>$50 Cash</li>
                     <li>+ More TBD</li>
@@ -378,32 +385,33 @@
                 Special Awards
             </h3>
 
-            <div class="grid gap-6 md:grid-cols-2">
+            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
-                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 shadow-sm hover:shadow-xl transition transform hover:-translate-y-2">
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 shadow-sm hover:shadow-xl transition transform hover:-translate-y-2">
                     <div class="orbitron text-red-400 text-sm tracking-widest mb-2">MOST CREATIVE</div>
                     <ul class="space-y-1 text-slate-300 text-sm">
                         <li>$20 Cash</li>
-                        <li>1 Winner</li>
+                        <li>1 Winning Team</li>
                         <li>+ More TBD</li>
                     </ul>
                 </div>
 
-                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 shadow-sm hover:shadow-xl transition transform hover:-translate-y-2">
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 shadow-sm hover:shadow-xl transition transform hover:-translate-y-2">
                     <div class="orbitron text-red-400 text-sm tracking-widest mb-2">MOST IMPACTFUL</div>
                     <ul class="space-y-1 text-slate-300 text-sm">
                         <li>$20 Cash</li>
-                        <li>1 Winner</li>
+                        <li>1 Winning Team</li>
                         <li>+ More TBD</li>
                     </ul>
                 </div>
+
 
             </div>
         </div>
 
         <!-- Participation Prize -->
         <div class="mt-12 max-w-xl mx-auto">
-            <div class="bg-slate-800 p-6 rounded-2xl border border-red-500/30 shadow-sm hover:shadow-xl transition transform hover:-translate-y-2 text-center">
+            <div class="bg-slate-900 p-6 rounded-2xl border border-red-500/30 shadow-sm hover:shadow-xl transition transform hover:-translate-y-2 text-center">
                 <div class="orbitron text-red-400 text-sm tracking-widest mb-2">ALL PARTICIPANTS</div>
                 <p class="text-slate-300 text-sm">
                     .XYZ Domain Credit ($15)
@@ -440,7 +448,7 @@
                     </div>
 
                     <!-- content -->
-                    <div class="mt-4 md:mt-0 bg-slate-800 border border-slate-700 rounded-2xl p-5 shadow-sm">
+                    <div class="mt-4 md:mt-0 bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-sm">
                         <h3 class="orbitron text-lg font-semibold text-slate-300 mb-1">Check-in</h3>
                         <p class="text-slate-400">Arrival window</p>
                     </div>
@@ -458,7 +466,7 @@
                     </div>
 
                     <!-- content -->
-                    <div class="mt-4 md:mt-0 bg-slate-800 border border-slate-700 rounded-2xl p-5 shadow-sm">
+                    <div class="mt-4 md:mt-0 bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-sm">
                         <h3 class="orbitron text-lg font-semibold text-slate-300 mb-1">Hacking Starts</h3>
                         <p class="text-slate-400">Registration &amp; Sign-in</p>
                     </div>
@@ -476,7 +484,7 @@
                     </div>
 
                     <!-- content -->
-                    <div class="mt-4 md:mt-0 bg-slate-800 border border-slate-700 rounded-2xl p-5 shadow-sm">
+                    <div class="mt-4 md:mt-0 bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-sm">
                         <h3 class="orbitron text-lg font-semibold text-slate-300 mb-1">Opening Ceremony</h3>
                         <p class="text-slate-400">Registration &amp; Sign-in</p>
                     </div>
@@ -491,7 +499,7 @@
                         <div class="w-4 h-4 rounded-full bg-red-400 border-4 border-black/60 shadow"></div>
                     </div>
 
-                    <div class="mt-4 md:mt-0 bg-slate-800 border border-slate-700 rounded-2xl p-5 shadow-sm">
+                    <div class="mt-4 md:mt-0 bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-sm">
                         <h3 class="orbitron text-lg font-semibold text-slate-300 mb-1">Lunch Break</h3>
                         <p class="text-slate-400">Talks by Guest Speakers</p>
                     </div>
@@ -506,7 +514,7 @@
                         <div class="w-4 h-4 rounded-full bg-red-400 border-4 border-black/60 shadow"></div>
                     </div>
 
-                    <div class="mt-4 md:mt-0 bg-slate-800 border border-slate-700 rounded-2xl p-5 shadow-sm">
+                    <div class="mt-4 md:mt-0 bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-sm">
                         <h3 class="orbitron text-lg font-semibold text-slate-300 mb-1">Hackathon Resumes</h3>
                         <p class="text-slate-400">Back to coding and building</p>
                     </div>
@@ -521,7 +529,7 @@
                         <div class="w-4 h-4 rounded-full bg-red-400 border-4 border-black/60 shadow"></div>
                     </div>
 
-                    <div class="mt-4 md:mt-0 bg-slate-800 border border-slate-700 rounded-2xl p-5 shadow-sm">
+                    <div class="mt-4 md:mt-0 bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-sm">
                         <h3 class="orbitron text-lg font-semibold text-slate-300 mb-1">Dinner Break</h3>
                         <p class="text-slate-400">Talks by Guest Speakers</p>
                     </div>
@@ -536,7 +544,7 @@
                         <div class="w-4 h-4 rounded-full bg-red-400 border-4 border-black/60 shadow"></div>
                     </div>
 
-                    <div class="mt-4 md:mt-0 bg-slate-800 border border-slate-700 rounded-2xl p-5 shadow-sm">
+                    <div class="mt-4 md:mt-0 bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-sm">
                         <h3 class="orbitron text-lg font-semibold text-slate-300 mb-1">Hacking Ends</h3>
                         <p class="text-slate-400">Submission Deadline on Devpost</p>
                     </div>
@@ -550,7 +558,7 @@
                         <div class="w-4 h-4 rounded-full bg-red-400 border-4 border-black/60 shadow"></div>
                     </div>
 
-                    <div class="mt-4 md:mt-0 bg-slate-800 border border-slate-700 rounded-2xl p-5 shadow-sm">
+                    <div class="mt-4 md:mt-0 bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-sm">
                         <h3 class="orbitron text-lg font-semibold text-slate-300 mb-1">Closing & Awards Ceremony</h3>
                         <p class="text-slate-400">End of the Hackathon</p>
                     </div>
@@ -563,7 +571,7 @@
 </section>
 
 <!-- SPONSORS -->
-<section id="sponsors" class="py-16 bg-slate-900">
+<section id="sponsors" class="py-16 bg-slate-950">
     <div class="container mx-auto px-6 text-center">
         <p class="orbitron text-3xl md:text-4xl font-extrabold text-center mb-4">
             <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-600 via-red-400 to-orange-500">Our Sponsors</span>
@@ -575,12 +583,14 @@
                 <a  href="mailto:bisvhackathon@gmail.com" class="text-red-400 hover:underline font-medium transition">bisvhackathon@gmail.com</a>
 
             </p>
+
             <a href="BISV Hacks Sponsorship Prospectus.pdf" target="_blank"
                class="mt-4 backdrop-blur-sm orbitron shimmer-button inline-flex items-center px-6 py-3 rounded-full bg-red-500/30 border border-red-400 text-red-200 font-semibold shadow-[0_0_15px_red] hover:bg-red-500/50 hover:shadow-[0_0_25px_red] transition duration-300">
                 View our Prospectus</a>
+            <p class="mt-4 text-slate-400 text-sm max-w-1/2 mx-auto">
+                Although we prefer cash contributions, we would still love in-kind contributions such as subscriptions, speakers, workshops, prizes, swag, and anything else your company can offer to make BISV Hacks a better experience!
+            </p>
         </div>
-
-        <p class="text-slate-400 max-w-2xl mx-auto text-xl mb-8">Thank you to our amazing sponsors who make BISV Hacks possible!</p>
 
         <p class="orbitron text-xl md:text-2xl font-extrabold text-center mb-4">
             <span class="bg-clip-text text-transparent bg-gradient-to-r from-amber-500 via-amber-300 to-amber-500">
@@ -588,12 +598,12 @@
             </span>
         </p>
         <div class="flex justify-center items-center gap-8 flex-wrap">
-            <a href="https://opennote.com/" target="_blank" class="p-4 bg-slate-950 rounded-xl shadow-sm border border-slate-800">
-                <img src="images/2026/sponsors/Opennote.png" alt="Opennote" class="invert h-16 object-contain">
+            <a href="https://opennote.com/" target="_blank" class="p-4 bg-slate-900 rounded-xl shadow-sm border border-slate-800">
+                <img src="images/2026/sponsors/Opennote.png" alt="Opennote" class="invert h-14 object-contain">
             </a>
 
-            <a href="https://crackd.it/" target="_blank" class="p-4 bg-slate-950 rounded-xl shadow-sm border border-slate-800">
-                <img src="images/2026/sponsors/Crackd.png" alt="Crackd" class="h-16 object-contain">
+            <a href="https://crackd.it/" target="_blank" class="p-4 bg-slate-900 rounded-xl shadow-sm border border-slate-800">
+                <img src="images/2026/sponsors/Crackd.png" alt="Crackd" class="h-14 object-contain">
             </a>
         </div>
         <p class="mt-20 orbitron text-xl md:text-2xl font-extrabold text-center mb-4">
@@ -602,42 +612,45 @@
             </span>
         </p>
         <div class="flex justify-center items-center gap-8 flex-wrap">
-            <a href="https://stellarlearning.app" target="_blank" class="p-4 bg-slate-950 rounded-xl shadow-sm border border-slate-800">
-                <img src="images/2026/sponsors/Stellar.png" alt="Stellar Learning" class="h-16 object-contain">
+            <a href="https://stellarlearning.app" target="_blank" class="p-4 bg-slate-900 rounded-xl shadow-sm border border-slate-800">
+                <img src="images/2026/sponsors/Stellar.png" alt="Stellar Learning" class="h-14 object-contain">
             </a>
 
-            <a href="https://gen.xyz/" target="_blank" class="p-4 bg-slate-950 rounded-xl shadow-sm border border-slate-800">
-                <img src="images/2026/sponsors/XYZ.png" alt="XYZ" class="h-16 object-contain">
+            <a href="https://unibee.dev/" target="_blank" class="p-4 bg-slate-900 rounded-xl shadow-sm border border-slate-800">
+                <img src="images/2026/sponsors/Unibee.png" alt="Unibee" class="h-14 object-contain">
             </a>
 
-            <a href="https://interviewcake.com/" target="_blank" class="p-4 bg-slate-950 rounded-xl shadow-sm border border-slate-800">
-                <img src="images/2026/sponsors/InterviewCake.png" alt="Interview Cake" class="h-16 object-contain">
+            <a href="https://yriscience.com/" target="_blank" class="p-4 bg-slate-900 rounded-xl shadow-sm border border-slate-800">
+                <img src="images/2026/sponsors/YRI.png" alt="YRI" class="h-14 object-contain">
             </a>
 
-            <a href="https://codecrafters.io/" target="_blank"  class="p-4 bg-slate-950 rounded-xl shadow-sm border border-slate-800">
-                <img src="images/2026/sponsors/CodeCrafters.png" alt="Code Crafters" class="h-16 object-contain">
+            <a href="https://cleanshot.com/" target="_blank" class="p-4 bg-slate-900 rounded-xl shadow-sm border border-slate-800">
+                <img src="images/2026/sponsors/CleanshotX.png" alt="Cleanshot X" class="h-14 object-contain">
             </a>
 
-            <a href="https://elevenlabs.io/" target="_blank" class="p-4 bg-slate-950 rounded-xl shadow-sm border border-slate-800">
-                <img src="images/2026/sponsors/ElevenLabs.png" alt="ElevenLabs" class="invert h-16 object-contain">
+            <a href="https://aops.com/" target="_blank" class="p-4 bg-slate-900 rounded-xl shadow-sm border border-slate-800">
+                <img src="images/2026/sponsors/AoPS.png" alt="AoPS" class="h-14 object-contain">
             </a>
 
 
-            <a href="https://unibee.dev/" target="_blank" class="p-4 bg-slate-950 rounded-xl shadow-sm border border-slate-800">
-                <img src="images/2026/sponsors/Unibee.png" alt="Unibee" class="h-16 object-contain">
+            <a href="https://gen.xyz/" target="_blank" class="p-4 bg-slate-900 rounded-xl shadow-sm border border-slate-800">
+                <img src="images/2026/sponsors/XYZ.png" alt="XYZ" class="h-14 object-contain">
             </a>
 
-            <a href="https://yriscience.com/" target="_blank" class="p-4 bg-slate-950 rounded-xl shadow-sm border border-slate-800">
-                <img src="images/2026/sponsors/YRI.png" alt="YRI" class="h-16 object-contain">
+
+            <a href="https://interviewcake.com/" target="_blank" class="p-4 bg-slate-900 rounded-xl shadow-sm border border-slate-800">
+                <img src="images/2026/sponsors/InterviewCake.png" alt="Interview Cake" class="h-14 object-contain">
             </a>
 
-            <a href="https://cleanshot.com/" target="_blank" class="p-4 bg-white rounded-xl shadow-sm border border-slate-100">
-                <img src="images/2026/sponsors/CleanshotX.png" alt="Cleanshot X" class="h-16 object-contain">
+            <a href="https://codecrafters.io/" target="_blank"  class="p-4 bg-slate-900 rounded-xl shadow-sm border border-slate-800">
+                <img src="images/2026/sponsors/CodeCrafters.png" alt="Code Crafters" class="h-14 object-contain">
             </a>
 
-            <a href="https://aops.com/" target="_blank" class="p-4 bg-white rounded-xl shadow-sm border border-slate-100">
-                <img src="images/2026/sponsors/AoPS.png" alt="AoPS" class="h-16 object-contain">
+            <a href="https://elevenlabs.io/" target="_blank" class="p-4 bg-slate-900 rounded-xl shadow-sm border border-slate-800">
+                <img src="images/2026/sponsors/ElevenLabs.png" alt="ElevenLabs" class="invert h-14 object-contain">
             </a>
+
+
 
         </div>
         <p class="mt-20 orbitron text-xl md:text-2xl font-extrabold text-center mb-4">
@@ -647,8 +660,8 @@
         </p>
 
         <div class="flex justify-center items-center gap-8 flex-wrap">
-            <a href="https://hackclub.com" target="_blank" class="p-4 bg-slate-950 rounded-xl shadow-sm border border-slate-800">
-                <img src="images/2026/sponsors/HackClub.png" alt="Hack Club" class="h-16 object-contain">
+            <a href="https://hackclub.com" target="_blank" class="p-4 bg-slate-900 rounded-xl shadow-sm border border-slate-800">
+                <img src="images/2026/sponsors/HackClub.png" alt="Hack Club" class="h-14 object-contain">
             </a>
         </div>
 
@@ -659,11 +672,13 @@
         </p>
 
         <div class="flex justify-center items-center gap-8 flex-wrap">
-            <a href="https://basisindependent.com/schools/ca/silicon-valley/" target="_blank" class="p-4 bg-white rounded-xl shadow-sm border border-slate-100">
-                <img src="images/2026/sponsors/BISV.png" alt="BASIS Independent Silicon Valley" class="h-16 object-contain">
+            <a href="https://basisindependent.com/schools/ca/silicon-valley/" target="_blank" class="p-4 bg-slate-900 rounded-xl shadow-sm border border-slate-800">
+                <img src="images/2026/sponsors/BISV.png" alt="BASIS Independent Silicon Valley" class="h-14 object-contain">
             </a>
 
         </div>
+        <p class="text-slate-400 max-w-2xl mx-auto text-lg mt-8">Thank you to our amazing sponsors who make BISV Hacks possible!</p>
+
     </div>
 </section>
 
@@ -683,17 +698,31 @@
         </div>
 
         <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <!-- Judge 1 -->
-            <div class="judge bg-slate-900  border border-slate-700 rounded-2xl p-6 shadow-sm flex gap-4 items-start">
+
+            <div class="judge bg-slate-900  border border-slate-700 rounded-2xl p-6 shadow-sm flex gap-4 items-start hover:-translate-y-2">
                 <img src="images/2026/judges/abhi.jpeg" alt="Abhigyan Arya" class="w-24 h-24 rounded-full object-cover shadow-md flex-shrink-0">
                 <div>
-                    <h3 class="orbitron font-semibold text-lg">Abhigyan Arya</h3>
+                    <h3 class="orbitron font-semibold text-lg">Abhigyan Arya
+                        <img class="inline-block ml-2 w-6 h-6 rounded-sm" src="https://script.capital/assets/images/opennote.jpg"/>
+
+                        <img class="inline-block ml-1 w-6 h-6 rounded-sm" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Y_Combinator_logo.svg/1280px-Y_Combinator_logo.svg.png"/>
+
+                    </h3>
                     <div class="orbitron text-red-400 font-extrabold text-sm mb-3">Keynote Speaker</div>
                     <p class="text-slate-400 text-sm">Abhigyan Arya is a co-founder and CTO of Opennote (YC S25), a student-founded AI-powered edtech startup building interactive, personalized learning tools that integrate advanced AI infrastructure with note-based study workflows, drawing on his experience in full-stack development, AI systems, and technical product engineering.</p>
                 </div>
             </div>
 
-            <div class="judge bg-slate-900  border border-slate-700 rounded-2xl p-6 shadow-sm flex gap-4 items-start">
+            <div class="judge bg-slate-900  border border-slate-700 rounded-2xl p-6 shadow-sm flex gap-4 items-start hover:-translate-y-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg" alt="TBD" class="w-24 h-24 rounded-full object-cover shadow-md flex-shrink-0">
+                <div>
+                    <h3 class="orbitron font-semibold text-lg">TBD</h3>
+                    <div class="orbitron text-red-400 font-extrabold text-sm mb-3">TBD</div>
+                    <p class="text-slate-400 text-sm">We'll add more judges closer to the event</p>
+                </div>
+            </div>
+
+            <div class="judge bg-slate-900  border border-slate-700 rounded-2xl p-6 shadow-sm flex gap-4 items-start hover:-translate-y-2">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg" alt="TBD" class="w-24 h-24 rounded-full object-cover shadow-md flex-shrink-0">
                 <div>
                     <h3 class="orbitron font-semibold text-lg">TBD</h3>
@@ -709,49 +738,49 @@
 
 
 <!-- TEAM -->
-<section id="team" class="py-20 bg-slate-900">
+<section id="team" class="py-20 bg-slate-950">
     <div class="container mx-auto px-6">
         <p class="orbitron text-3xl md:text-4xl font-extrabold text-center mb-4">
             <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-600 via-red-400 to-orange-500">Meet the Team</span>
         </p>
         <div class="mt-16 grid gap-6 md:grid-cols-3 lg:grid-cols-3">
             <!-- Team Member Card -->
-            <div class="bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-700 text-center hover:shadow-xl transform transition hover:-translate-y-2">
+            <div class="bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-800 text-center hover:shadow-xl transform transition hover:-translate-y-2">
                 <img src="images/charan hackathon image.jpeg" alt="Charan Sridhar" class="w-28 h-28 mx-auto rounded-full object-cover shadow-md mb-4">
                 <h3 class="orbitron font-semibold text-lg">Charan Sridhar</h3>
                 <div class="orbitron text-red-400 font-extrabold text-sm mb-3">Chief Organizer</div>
                 <p class="text-slate-400 text-sm">Charan Sridhar is a senior attending BASIS Independent Silicon Valley who is passionate about computer science. Charan's life goal is to use computer science to ensure improved quality of life and equality for everyone, especially marginalized communities. He founded and leads the Data Science and Machine Learning Club at his school and used this club as a platform to start this hackathon, the first at BASIS.</p>
             </div>
 
-            <div class="bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-700 text-center hover:shadow-xl transform transition hover:-translate-y-2">
+            <div class="bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-800 text-center hover:shadow-xl transform transition hover:-translate-y-2">
                 <img src="images/luke hackathon image.png" alt="Luke Song" class="w-28 h-28 mx-auto rounded-full object-cover shadow-md mb-4">
                 <h3 class="orbitron font-semibold text-lg">Luke Song</h3>
                 <div class="orbitron text-red-400 font-extrabold text-sm mb-3">Associate Chief Organizer</div>
                 <p class="text-slate-400 text-sm">An avid coding enthusiast, Luke Song is a senior at BASIS Independent Silicon Valley who loves turning ideas into reality. Having helped create teaching materials for Charan's Data Science Club, Luke is now helping him organize the first hackathon at BISV. In his free time, you can find him hiking, reading novels, or working on coding and research projects designed to make lives easier for everyone.</p>
             </div>
 
-            <div class="bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-700 text-center hover:shadow-xl transform transition hover:-translate-y-2">
+            <div class="bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-800 text-center hover:shadow-xl transform transition hover:-translate-y-2">
                 <img src="images/nitai hackathon image.png" alt="Nitai Goswami" class="w-28 h-28 mx-auto rounded-full object-cover shadow-md mb-4">
                 <h3 class="orbitron font-semibold text-lg">Nitai Goswami</h3>
                 <div class="orbitron text-red-400 font-extrabold text-sm mb-3">Technology Lead & Organizer</div>
                 <p class="text-slate-400 text-sm">Nitai Goswami is a sophomore at BASIS Independent Silicon Valley who has been interested in artifical intelligence since 7th grade. He has, over the years, learned about machine learning, neural networks, large language models, and he strives to learn more. He is also the technology officer for Charan's Data Science Club and now one of the organizers of this hackathon. Outside of school, he learns more about AI and plays basketball.</p>
             </div>
 
-            <div class="bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-700 text-center hover:shadow-xl transform transition hover:-translate-y-2">
+            <div class="bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-800 text-center hover:shadow-xl transform transition hover:-translate-y-2">
                 <img src="images/anderson hackathon image.jpg" alt="Anderson Lu" class="w-28 h-28 mx-auto rounded-full object-cover shadow-md mb-4">
                 <h3 class="orbitron font-semibold text-lg">Anderson Lu</h3>
                 <div class="orbitron text-red-400 font-extrabold text-sm mb-3">Marketing Lead & Organizer</div>
                 <p class="text-slate-400 text-sm">Anderson Lu is a sophomore at BASIS Independent Silicon Valley who has been actively engaged in computer science for over five years. He works with image processing in the machine learning field and has experience in making websites. In his free time, he plays basketball and strives increase his knowledge in machine learning.</p>
             </div>
 
-            <div class="bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-700 text-center hover:shadow-xl transform transition hover:-translate-y-2">
+            <div class="bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-800 text-center hover:shadow-xl transform transition hover:-translate-y-2">
                 <img src="images/nicholas hackathon image.png" alt="Nicholas Wang" class="w-28 h-28 mx-auto rounded-full object-cover shadow-md mb-4">
                 <h3 class="orbitron font-semibold text-lg">Nicholas Wang</h3>
                 <div class="orbitron text-red-400 font-extrabold text-sm mb-3">Sponsors Lead & Organizer</div>
                 <p class="text-slate-400 text-sm">Nicholas Wang is a junior at BASIS Independent Silicon Valley who has been coding since 6th grade and enjoys exploring technology and building projects. He works with a variety of tools and frameworks, including Svelte, TailwindCSS, Python, and Flask, among others. Nicholas likes experimenting with AI tools, APIs, and creative coding projects. He is also the founder of Stellar, an AI-powered platform aimed at providing free, engaging education. In his free time, he enjoys building websites, learning new technologies, and participating in hackathons.</p>
             </div>
 
-            <div class="bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-700 text-center hover:shadow-xl transform transition hover:-translate-y-2">
+            <div class="bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-800 text-center hover:shadow-xl transform transition hover:-translate-y-2">
                 <img src="images/redger hackathon image.png" alt="Redger Xu" class="w-28 h-28 mx-auto rounded-full object-cover shadow-md mb-4">
                 <h3 class="orbitron font-semibold text-lg">Redger Xu</h3>
                 <div class="orbitron text-red-400 font-extrabold text-sm mb-3">Organizer</div>
@@ -778,7 +807,7 @@
                 </h3>
                 <div class="faq-answer px-4 pb-4 hidden">
                     <p class="text-slate-400">
-                        A hackathon is an event in which many people meet to engage in collaborative or competitive programming. In our case, competitive projects and workshops.
+                        A hackathon is an event in which a large number of people meet to engage in collaborative or competitive computer programming. In our case, collaborative programming.
                     </p>
                 </div>
             </div>
@@ -802,7 +831,7 @@
                 </h3>
                 <div class="faq-answer px-4 pb-4 hidden">
                     <p class="text-slate-400">
-                        Any high school student — beginners welcome. Workshops and mentors will provide assistance.
+                        Any high school student with a passion for technology can participate, even if they have no coding experience!
                     </p>
                 </div>
             </div>
@@ -826,7 +855,8 @@
                 </h3>
                 <div class="faq-answer px-4 pb-4 hidden">
                     <p class="text-slate-400">
-                        Judging will be online due to time constraints. Results will be sent by 5:00 p.m. on March 2nd.
+                        The hackathon will be judged online and not in-person due to time constraints.
+                        The results will be sent out by 5:00 p.m. on March 15th.
                     </p>
                 </div>
             </div>
@@ -838,7 +868,7 @@
                 </h3>
                 <div class="faq-answer px-4 pb-4 hidden">
                     <p class="text-slate-400">
-                        BASIS Independent Silicon Valley — 1290 Parkmoor Ave, San Jose, CA 95126.
+                        The hackathon will be held at BASIS Independent Silicon Valley. The school's adress is 1290 Parkmoor Ave, San Jose, CA 95126.
                     </p>
                 </div>
             </div>
@@ -862,7 +892,7 @@
                 </h3>
                 <div class="faq-answer px-4 pb-4 hidden">
                     <p class="text-slate-400">
-                        Yes — lunch and snacks will be provided throughout the day.
+                        Yes, lunch will be held, and there will be snacks served throughout the day.
                     </p>
                 </div>
             </div>
@@ -873,7 +903,7 @@
 
 
 <!-- CONTACT -->
-<section id="contact" class="py-16 bg-slate-900">
+<section id="contact" class="py-16 bg-slate-950">
     <div class="container mx-auto px-6 max-w-4xl">
         <p class="orbitron text-3xl md:text-4xl font-extrabold text-center mb-4">
             <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-600 via-red-400 to-orange-500">Let's Connect</span>
@@ -881,19 +911,19 @@
         <p class="text-center text-slate-400 mb-8">Have questions? We'd love to hear from you!</p>
 
         <div class="grid md:grid-cols-3 gap-6">
-            <a class="block bg-slate-950 p-6 rounded-2xl shadow-sm border border-slate-800 text-center" href="mailto:bisvhackathon@gmail.com">
+            <a class="block bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-800 text-center" href="mailto:bisvhackathon@gmail.com">
                 <div class="text-4xl mb-3">📧</div>
                 <h3 class="orbitron font-semibold">Email Us</h3>
                 <p class="text-slate-400 text-sm">bisvhackathon@gmail.com</p>
             </a>
 
-            <a class="block bg-slate-950 p-6 rounded-2xl shadow-sm border border-slate-800 text-center" href="mailto:bisvhackathon@gmail.com">
+            <a class="block bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-800 text-center" href="mailto:bisvhackathon@gmail.com">
             <div class="text-4xl mb-3">📱</div>
                 <h3 class="orbitron font-semibold">Follow Us</h3>
                 <p class="text-slate-400 text-sm">@bisv.hacks</p>
             </a>
 
-            <a class="block bg-slate-950 p-6 rounded-2xl shadow-sm border border-slate-800 text-center" href="mailto:bisvhackathon@gmail.com">
+            <a class="block bg-slate-900 p-6 rounded-2xl shadow-sm border border-slate-800 text-center" href="mailto:bisvhackathon@gmail.com">
                 <div class="text-4xl mb-3">💬</div>
                 <h3 class="orbitron font-semibold">Join Discord</h3>
                 <p class="text-slate-400 text-sm">Connect with other hackers</p>
@@ -903,7 +933,7 @@
 </section>
 
 <!-- FOOTER -->
-<footer class="bg-slate-950 text-white py-8">
+<footer class="bg-slate-950 text-white py-8 border-t border-slate-700">
     <div class="container mx-auto px-6 text-center text-slate-400">
         <p>© 2025-2026 <span class="orbitron">BISV Hacks</span></p>
         <p>Fiscally Backed by Hack Club, which is a 501(c)(3) Nonprofit</p>
@@ -929,6 +959,7 @@
 
     body{
         font-family: "Quicksand", sans-serif;
+        scroll-behavior: smooth;
     }
 
     img.emoji {
