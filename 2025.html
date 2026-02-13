@@ -8,6 +8,7 @@
     <!-- Tailwind Play / Browser CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/twemoji@latest/dist/twemoji.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/BISV_Hacks_Favicon.png">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@300;400;600;700;800&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -86,11 +87,11 @@
 <body class="text-white bg-slate-950 text-slate-900 antialiased">
 
 <!-- Announcement Banner -->
-<div class="sticky top-0 z-[60] w-full bg-gradient-to-r from-pink-900 via-red-950 to-orange-900 text-white shadow-lg">
+<div class="fixed top-0 z-[60] w-full bg-gradient-to-r from-pink-900 via-red-950 to-orange-900 text-white shadow-lg">
     <div class="max-w-7xl mx-auto px-4 py-2 flex flex-col sm:flex-row items-center justify-center gap-3 text-center">
 
         <p class="text-sm md:text-base font-semibold tracking-wide">
-           This is the 2025 event. Registration for <span class="orbitron font-extrabold">BISV Hacks 2026</span> is open!
+           <span class="hidden md:inline-block">This is the 2025 event.</span> Registration for <span class="orbitron font-extrabold">BISV Hacks 2026</span> is open!
         </p>
 
         <a href="https://bisvhacks.com/"
@@ -104,10 +105,10 @@
 
 
 <!-- Header / Nav -->
-<header class="shadow-red-500/50  max-w-4xl top-16 left-1/2 -translate-x-1/2 w-full rounded-2xl fixed inset-x-0 top-0 z-50 backdrop-blur-lg bg-black/50 border-b border-slate-800 shadow-sm">
+<header class="shadow-red-500/50  max-w-4xl top-24 md:top-16 left-1/2 -translate-x-1/2 w-3/4 lg:w-full rounded-2xl fixed inset-x-0 top-0 z-50 backdrop-blur-lg bg-black/50 border-b border-slate-800 shadow-sm">
     <div class="container mx-auto px-6 py-3">
         <nav class="flex items-center justify-between h-14">
-            <a href="#hero" class="orbitron flex items-center gap-3">
+            <a href="https://bisvhacks.com/" class="orbitron flex items-center gap-3">
                 <img src="images/BISV_Hacks.png" alt="BISV Hacks Logo" class="w-16 h-14 object-contain p-1">
                 <span class="font-extrabold text-lg text-red-400">BISV Hacks</span>
             </a>
